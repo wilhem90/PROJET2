@@ -85,7 +85,7 @@ header nav.desktop > ul > li > a{
 }
 
 .corpo {
-    background: url('/imagens/carroBermax.jpg') no-repeat center;
+    background: url('./imagens/carroBermax.jpg') no-repeat center;
     display: block;
     width: 100%;
     min-height: 400px;
