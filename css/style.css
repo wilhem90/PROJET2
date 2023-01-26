@@ -52,9 +52,11 @@ h1 {
     background-color: #F47D46;
     border: 1px solid rgb(241, 240, 240);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.514);
-    border: 1px solid black;
+    border: 1px solid rgba(122, 117, 117, 0.436);
     padding: 5px 50px;
     border-radius: 5px;
+    color: #ffffff;
+    letter-spacing: 5px;
 }
 
 header nav.desktop {
@@ -96,9 +98,10 @@ header nav.desktop > ul > li > a{
     align-items: flex-start;
 }
 
-.text-banner-single {
+.text-banner-single:not(:nth-child(4)) {
     text-transform: uppercase;
-    padding: 15px;
+    cursor: pointer;
+    padding: 10px;
     color: white;
     background-color: #F47D46;
     margin-top: 15px;
@@ -111,20 +114,32 @@ header nav.desktop > ul > li > a{
     margin-top: 100px;
     margin-left: 100px;
     width: 250px;
-
+    position: relative;
+    
 }
 
 
 .text-banner-single:nth-child(2) {
     margin-left: 90px;
     width: 200px;
+    position: relative;
 }
 
 .text-banner-single:nth-child(3) {
+    position: relative;
     margin-left: 80px;
     width: 150px;
 }
 
+.text-banner-single:nth-child(4) {
+    position: relative;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    background-color: #ffffff;
+    margin: 15px;
+    margin-left: 70px;
+    width: 200px;
+}
 @media screen and (max-width: 768px){
     .corpo {
         height: 70vh;
