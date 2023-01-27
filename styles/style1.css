@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav-bar {
+    font-family: 'Oswald', sans-serif;
+    background-color: #ff9485;
+    padding: 10px 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+}
+
+.nav-bar > .container-left {
+    float: left;
+    height: 50px;
+    width: 220px;
+    margin: auto 0px 0px 4%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+.nav-bar .container-left .logo {
+    background: url('/imagens/logo2.png') no-repeat center center;
+    margin: auto;
+    height: 50px;
+    width: 180px;
+    background-size: 100%;
+}
+
+.nav-bar .container-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    height: 40px;
+    width: 40%;
+    background-color: rgb(251, 241, 241);
+}
+
+.nav-bar .container-center input {
+    width: 80%;
+    margin: 5px 10px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.nav-bar .container-center button[type='submit'] {
+    width: 20%;
+    font-weight: bolder;
+    background-color: #333333; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+}
+
+
+.nav-bar .container-right {
+    display: flex;
+    flex-direction: row;
+    margin-right: -10px;
+    width: 30%;
+}
+
+.nav-bar .container-right > ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-items: right;
+
+}
+
+.nav-bar .container-right > ul > li {
+    list-style: none;
+    margin: 0px 8px;
+    
+}
+
+
+.nav-bar .container-right > ul > li > a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #0741AD;
+    font-size: 18px;
+
+}
+
+
+.nav-bar .container-right > ul > li > a:hover {
+    background-color: rgba(224, 250, 255, 0.582);
+    border-radius: 5px;
+}
+
+.nav-bar .container-right > ul > li > a:active {
+    background-color: rgb(166, 250, 145);
+}
+
+.nav-bar .container-right > ul > li > a:focus {
+    background-color: chartreuse;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
