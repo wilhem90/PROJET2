@@ -4,24 +4,46 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+body {
+    background-color: #EBEBEB;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1490px;
+    margin: auto;
+    height: 100vh;
+}
+
+.container-navbar {
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .nav-bar {
     font-family: 'Oswald', sans-serif;
-    background-color: #ff9485;
-    padding: 10px 2%;
+    background-color: #F47C48;
+    color: white;
+    padding: auto 2%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: 70px;
+    height: 100px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.463);
+    z-index: 1;
+    border-radius: 5px;
+    
 }
 
 .nav-bar > .container-left {
     float: left;
-    height: 50px;
+    height: 60px;
     width: 220px;
-    margin: auto 0px 0px 4%;
+    margin: auto;
+    display: flex;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     
@@ -43,7 +65,7 @@
     margin: auto;
     height: 40px;
     width: 40%;
-    background-color: rgb(251, 241, 241);
+    background-color: rgb(193, 193, 193);
 }
 
 .nav-bar .container-center input {
@@ -58,7 +80,7 @@
 .nav-bar .container-center button[type='submit'] {
     width: 20%;
     font-weight: bolder;
-    background-color: #333333; /* Cor de fundo do botão */
+    background-color: #AA7464; /* Cor de fundo do botão */
     color: #ffffff; /* Cor do texto */
     border: none; /* Remove a borda */
     cursor: pointer; /* Altera o cursor ao passar o mouse */
@@ -68,21 +90,24 @@
 .nav-bar .container-right {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    height: 50px;
     margin-right: -10px;
     width: 30%;
+    
 }
 
 .nav-bar .container-right > ul {
-    margin-top: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-items: right;
-
+    
 }
 
 .nav-bar .container-right > ul > li {
     list-style: none;
-    margin: 0px 8px;
+    margin: auto 10px;
     
 }
 
@@ -90,14 +115,14 @@
 .nav-bar .container-right > ul > li > a {
     text-decoration: none;
     padding: 0px 10px;
-    color: #0741AD;
+    color: #ffffff;
     font-size: 18px;
-
+    
 }
 
 
 .nav-bar .container-right > ul > li > a:hover {
-    background-color: rgba(224, 250, 255, 0.582);
+    background-color: rgba(195, 239, 248, 0.233);
     border-radius: 5px;
 }
 
@@ -111,3 +136,85 @@
     font-size: 20px;
     transition: 0.3s;
 }
+
+.btn {
+    border: none;
+    width: 40px;
+    margin: auto;
+}
+
+
+.section1 {
+    margin: 30px auto 0px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+.produto1 {
+    cursor: pointer;
+    display: flex;
+    width: calc(100%/7);
+    height: 300px;
+    flex-direction: column;
+    
+    margin: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.produto1 img{
+    border-radius: 5px;
+    width: 100%;
+    max-height: 150px;
+    background-size: cover;
+    max-height: 200px;
+    height: 70%;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    
+}
+
+.produto1 .span {
+    /* font-size: 1.rem; */
+    color: rgb(49, 48, 48);
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.produto1 h1 {
+    font-weight: bold;
+
+}
+
+.span p {
+    font-style: italic;
+    color: #00a650;
+    font-size: 14px;
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+    margin-top: 5px;
+}
+
+.produto1 .span:hover {
+    color: #ac2a2a;
+    font-size: 1.05rem;
+}
+
+.section1 .produto1:hover {
+    height: 302px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.591);
+    z-index: 1;
+    
+}
+
+
+
+
+
+
+
